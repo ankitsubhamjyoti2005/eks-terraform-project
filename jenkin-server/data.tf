@@ -19,3 +19,4 @@ data "aws_ami" "example" {
     values = ["hvm"]
   }
 }
+data "aws_availability_zones" "azs" {}
