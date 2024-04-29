@@ -11,7 +11,11 @@ module "vpc" {
   enable_vpn_gateway = true
 
   tags = {
-    Terraform = "true"
+    Name        = "jenkins_vpc"
+    Terraform   = "true"
     Environment = "dev"
+  }
+  public_subnet_tags = {
+    Name = "jenkins_subnet"
   }
 }
